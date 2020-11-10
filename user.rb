@@ -5,5 +5,9 @@ class User
     @fullname = attrs[:fullname]
     @occupatiion = attrs[:occupation]
     @email = attrs[:email]
-  end  
+  end
+  
+  def jobless?
+    occupation.nil || occupation.strip == ''
+  end
 end
