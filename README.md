@@ -1,2 +1,2 @@
 # projecta
-## A cool software that does nothing :-)
+A cool software that does nothing :-)
