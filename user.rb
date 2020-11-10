@@ -5,5 +5,5 @@ class User
     @fullname = attrs[:fullname]
     @occupatiion = attrs[:occupation]
     @email = attrs[:email]
-  end
+  end  
 end
