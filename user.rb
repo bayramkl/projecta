@@ -1,8 +1,9 @@
 class User
-  attr_reader :fullname, :occupation
+  attr_reader :fullname, :occupation, :email
 
-  def initialize(fn, oc)
-    @fullname = fn
-    @occupatiion = oc
+  def initialize(attrs)
+    @fullname = attrs[:fullname]
+    @occupatiion = attrs[:occupation]
+    @email = attrs[:email]
   end
 end
