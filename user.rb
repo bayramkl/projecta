@@ -5,9 +5,9 @@ class User
     @fullname = attrs[:fullname]
     @occupatiion = attrs[:occupation]
     @email = attrs[:email]
-  end
-  
-  def jobless?
-    occupation.nil || occupation.strip == ''
+  end  
+ 
+  def to_s
+    "#{fullname}, #{email}, #{occupation}"
   end
 end
