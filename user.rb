@@ -6,4 +6,8 @@ class User
     @occupatiion = attrs[:occupation]
     @email = attrs[:email]
   end  
+ 
+  def to_s
+    "#{fullname}, #{email}, #{occupation}"
+  end
 end
