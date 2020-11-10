@@ -1,10 +1,12 @@
 class Course
-  attr_reader :title, :description, :price
+  attr_reader :title, :description, :price, :status
 
   def initialize(options)
     @title = options[:title]
     @description = options[:description]
     @price = options[:price]
+    @status = options[:status] || "new"
+    
   end
   
   def free?
