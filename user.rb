@@ -15,10 +15,13 @@ class User
     "{#{key_val('fullname', fullname)}, #{key_val('email', email)}, #{key_val('occupation', occupation)}}"
   end
 
+  def jobless?
+    occupation.nil? || occupation.strip == ''
+  end
+
   private
+
   def key_val(key, val)
     "\"#{key}\": \"#{val}\""
   end
-
-
 end
