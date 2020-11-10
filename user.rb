@@ -3,7 +3,7 @@ class User
 
   def initialize(attrs)
     @fullname = attrs[:fullname]
-    @occupatiion = attrs[:occupation]
+    @occupation = attrs[:occupation]
     @email = attrs[:email]
   end  
  
