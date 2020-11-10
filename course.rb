@@ -6,4 +6,8 @@ class Course
     @description = options[:description]
     @price = options[:price]
   end
+  
+  def free?
+    @price.nil? || @price == 0.0
+  end
 end
