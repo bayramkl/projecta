@@ -13,4 +13,8 @@ class Course
   def free?
     @price.nil? || @price == 0.0
   end
+  
+  def published?
+    status == 'published'
+  end
 end
