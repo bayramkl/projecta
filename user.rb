@@ -19,6 +19,12 @@ class User
     occupation.nil? || occupation.strip == ''
   end
 
+
+  # returns enrolled courses 
+  def enrolled_courses
+   [1, 8, 3, 90, 2]
+  end
+
   private
 
   def key_val(key, val)

@@ -17,4 +17,9 @@ class Course
   def published?
     status == 'published'
   end
+
+  # returns ids of enrolled users 
+  def enrolled
+   [23, 67, 24, 90, 27, 95, 72]
+  end
 end
